@@ -1,6 +1,14 @@
 #!/usr/bin/env python
 #_*_ coding: utf-8 _*_
 
+"""
+@file:       pdfMetadata.py
+@author:     Rubén Hortas <rubenhortas@gmail.com>
+@website:    http://rubenhortas.blogspot.com.es
+@github:     http://github.com/rubenhortas/pdfmetadata
+@license:    unlicensed
+"""
+
 def Print_array(array):
     array_tmp = ''
     for el in array:

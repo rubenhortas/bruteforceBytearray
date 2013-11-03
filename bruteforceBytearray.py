@@ -2,7 +2,7 @@
 #_*_ coding: utf-8 _*_
 
 """
-@file:       pdfMetadata.py
+@file:       bruteforceBytearray.py
 @author:     Rubén Hortas <rubenhortas@gmail.com>
 @website:    http://rubenhortas.blogspot.com.es
 @github:     http://github.com/rubenhortas/bruteforceBytearray

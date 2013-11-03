@@ -5,7 +5,7 @@
 @file:       pdfMetadata.py
 @author:     Rubén Hortas <rubenhortas@gmail.com>
 @website:    http://rubenhortas.blogspot.com.es
-@github:     http://github.com/rubenhortas/pdfmetadata
+@github:     http://github.com/rubenhortas/bruteforceBytearray
 @license:    unlicensed
 """
 

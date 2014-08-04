@@ -9,29 +9,29 @@
 @license:    unlicensed
 """
 
-def Print_array(array):
+def print_array(array):
     array_tmp = ''
-    for el in array:
-        array_tmp =  array_tmp + '[' + str(el) +']'
+    for element in array:
+        array_tmp =  array_tmp + '[' + str(element) +']'
     print array_tmp
 
-def Inc_cell(b_array, pos):
-    for i in range(0, 156):
-        b_array[pos] = i
-        Print_array(b_array)
+def inc_cell(barray, position, min_range, max_range):
+    for i in range(min_range, max_range):
+        barray[position] = i
+        print_array(barray)
 
-def Inc_array(b_array, array_len, actual_pos):
-    if actual_pos == array_len:
-            Inc_cell(b_array, actual_pos)
+def inc_array(barray, current_position, min_range, max_range):
+    if current_position == (len(barray) -1):
+            inc_cell(barray, current_position, min_range, max_range)
     else:
-        for pos_actual in range(actual_pos, array_len):
-            for j in range(0, 256):
-                b_array[actual_pos] = j
-                Inc_array(b_array, array_len, (actual_pos+1))
+        for i in range(min_range,max_range):
+            barray[current_position] = i
+            inc_array(barray, (current_position + 1), min_range, max_range)
+
 
 if __name__ == '__main__':
     array_size = 3
-    array_len = (array_size - 1)
+    min_range = 0
+    max_range = 10
     b_array = bytearray(array_size)
-
-    Inc_array(b_array, array_len, 0)
+    inc_array(b_array, 0, min_range, max_range)

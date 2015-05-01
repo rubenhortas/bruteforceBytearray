@@ -7,6 +7,7 @@
 @website:    http://rubenhortas.blogspot.com.es
 @github:     http://github.com/rubenhortas/bruteforceBytearray
 @license:    unlicensed
+@file:       bruteforceBytearray.py
 """
 
 def print_array(array):

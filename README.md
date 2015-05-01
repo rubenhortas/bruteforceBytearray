@@ -1,7 +1,7 @@
 bruteforceBytearray
 ===================
 
-Is a example of generation of combianations with a ByteArray
+Example of generation of combinations with a ByteArray in python.
 
 LICENSE
 
@@ -17,6 +17,6 @@ LICENSE
 
 WEB SITE
 
-    Visit the pdfMetadata github site for the lastest news and downloads:
+    Visit the bruteforceByteArray github site for the lastest news and downloads:
 
     https://github.com/rubenhortas/bruteforceByteArray

@@ -16,23 +16,23 @@ def print_array(array):
         array_tmp =  array_tmp + '[' + str(element) +']'
     print array_tmp
 
-def inc_cell(barray, position, min_range, max_range):
+def inc_cell(array, position, min_range, max_range):
     for i in range(min_range, max_range):
-        barray[position] = i
-        print_array(barray)
+        array[position] = i
+        print_array(array)
 
-def inc_array(barray, current_position, min_range, max_range):
-    if current_position == (len(barray) -1):
-            inc_cell(barray, current_position, min_range, max_range)
+def inc_array(array, current_position, min_range, max_range):
+    if current_position == (len(array) -1):
+            inc_cell(array, current_position, min_range, max_range)
     else:
         for i in range(min_range,max_range):
-            barray[current_position] = i
-            inc_array(barray, (current_position + 1), min_range, max_range)
+            array[current_position] = i
+            inc_array(array, (current_position + 1), min_range, max_range)
 
 
 if __name__ == '__main__':
     array_size = 3
     min_range = 0
     max_range = 10
-    b_array = bytearray(array_size)
-    inc_array(b_array, 0, min_range, max_range)
+    array = bytearray(array_size)
+    inc_array(array, 0, min_range, max_range)

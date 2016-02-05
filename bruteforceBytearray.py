@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-#_*_ coding: utf-8 _*_
+# _*_ coding: utf-8 _*_
 
 """
 @file:       bruteforceBytearray.py
@@ -10,24 +10,27 @@
 @file:       bruteforceBytearray.py
 """
 
-def print_array(array):
+
+def print_array(a):
     array_tmp = ''
-    for element in array:
-        array_tmp =  array_tmp + '[' + str(element) +']'
+    for element in a:
+        array_tmp = array_tmp + '[' + str(element) + ']'
     print array_tmp
 
-def inc_cell(array, position, min_range, max_range):
-    for i in range(min_range, max_range):
-        array[position] = i
-        print_array(array)
 
-def inc_array(array, current_position, min_range, max_range):
-    if current_position == (len(array) -1):
-            inc_cell(array, current_position, min_range, max_range)
+def inc_cell(arr, position, min, max):
+    for i in range(min, max):
+        arr[position] = i
+        print_array(arr)
+
+
+def inc_array(a, current_position, min, max):
+    if current_position == (len(a) - 1):
+        inc_cell(a, current_position, min, max)
     else:
-        for i in range(min_range,max_range):
-            array[current_position] = i
-            inc_array(array, (current_position + 1), min_range, max_range)
+        for i in range(min, max):
+            a[current_position] = i
+            inc_array(a, (current_position + 1), min, max)
 
 
 if __name__ == '__main__':

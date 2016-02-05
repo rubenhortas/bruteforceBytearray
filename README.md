@@ -17,6 +17,6 @@ LICENSE
 
 WEB SITE
 
-    Visit the bruteforceByteArray github site for the lastest news and downloads:
+    Visit the bruteforceByteArray github site for the latest news and downloads:
 
     https://github.com/rubenhortas/bruteforceByteArray

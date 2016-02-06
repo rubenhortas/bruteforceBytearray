@@ -18,19 +18,19 @@ def print_array(a):
     print array_tmp
 
 
-def inc_cell(arr, position, min, max):
-    for i in range(min, max):
+def inc_cell(arr, position, minimum, maximum):
+    for i in range(minimum, maximum):
         arr[position] = i
         print_array(arr)
 
 
-def inc_array(a, current_position, min, max):
+def inc_array(a, current_position, minimum, maximum):
     if current_position == (len(a) - 1):
-        inc_cell(a, current_position, min, max)
+        inc_cell(a, current_position, minimum, maximum)
     else:
-        for i in range(min, max):
+        for i in range(minimum, maximum):
             a[current_position] = i
-            inc_array(a, (current_position + 1), min, max)
+            inc_array(a, (current_position + 1), minimum, maximum)
 
 
 if __name__ == '__main__':

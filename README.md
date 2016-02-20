@@ -3,6 +3,12 @@ bruteforceBytearray
 
 Example of generation of combinations with a ByteArray in python.
 
+AUTHOR
+
+    Rubén Hortas
+    Contact: rubenhortas at gmail.com
+    Website: http://www.rubenhortas.blogspot.com.es
+
 LICENSE
 
     CC BY-NC-SA 3.0

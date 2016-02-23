@@ -11,11 +11,8 @@
 """
 
 
-def print_array(a):
-    array_tmp = ''
-    for element in a:
-        array_tmp = array_tmp + '[' + str(element) + ']'
-    print array_tmp
+def print_array(arr):
+    print ''.join('[{0}]'.format(element) for element in arr)
 
 
 def inc_cell(arr, position, minimum, maximum):
@@ -24,17 +21,18 @@ def inc_cell(arr, position, minimum, maximum):
         print_array(arr)
 
 
-def inc_array(a, current_position, minimum, maximum):
-    if current_position == (len(a) - 1):
-        inc_cell(a, current_position, minimum, maximum)
+def inc_array(arr, current_position, minimum, maximum):
+    if current_position == array_max_position:
+        inc_cell(arr, current_position, minimum, maximum)
     else:
         for i in range(minimum, maximum):
-            a[current_position] = i
-            inc_array(a, (current_position + 1), minimum, maximum)
+            arr[current_position] = i
+            inc_array(arr, (current_position + 1), minimum, maximum)
 
 
 if __name__ == '__main__':
     array_size = 3
+    array_max_position = array_size - 1
     min_range = 0
     max_range = 10
     array = bytearray(array_size)
